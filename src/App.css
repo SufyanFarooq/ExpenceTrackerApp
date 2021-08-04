@@ -1,0 +1,139 @@
+
+:root{
+  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif
+}
+.container{
+  max-width: 400px;
+min-height: 450px;
+box-shadow: 0 0 10px gray;
+  background-color: #efefef;
+  margin:0 auto;
+ padding: 15px 50px;
+}
+.header{
+  font-family: sans-serif;
+  font-weight: 500;
+  color: skyblue;
+}
+.balance-container{
+  /* margin-left: 40px; */
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+}
+.balance-container h4{
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.inc-exp-container{
+  background-color: #fff;
+  box-shadow: rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
+  display:flex ;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 10px 0;
+}
+.inc-exp-container h4{
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.money{
+  letter-spacing: 1;
+  font: 20px;
+  margin: 10px 0;
+  margin-left: 25px;
+}
+.plus{
+  letter-spacing: 1;
+  font: 700;
+  color: green;
+}
+.minus{
+  /* margin: 15px; */
+  letter-spacing: 1;
+  font: 700;
+  color: red;
+}
+h3{
+  text-align: center;
+  border-bottom:1px solid black;
+  margin: 40px 0 10px;
+  padding-bottom: 10px;
+}
+.list{
+  list-style-type:none ;
+  margin-bottom: 40px;
+  padding: 0;
+}
+.list li{
+  background-color: #fff;
+  box-shadow: rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+.delete-btn{
+  cursor: pointer;
+  background-color: #8a6a66;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%,-50%);
+  /* opacity: 0;/ */
+  transition: opacity .3s ease;
+}
+.form-control{
+  padding: 10px;
+  display: grid;
+  /* justify-content: space-between; */
+  margin: 0;
+}
+.form-control label{
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: bold;
+
+}
+.form-control input{
+  width: 100%;
+  margin: 10px 0;
+  padding: 5px 0;
+  /* font-size: 15px;
+  font-family: sans-serif;
+  margin-left: 30px;
+  height: 30px;
+  border-bottom: 1px solid black;
+  width: 20vw; */
+  /* border: none;
+  outline: none; */
+}
+.btn{
+  margin-top: 10px;
+  font-size: 16px;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  background-color: lightblue;
+}
